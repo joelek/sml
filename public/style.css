@@ -1,0 +1,179 @@
+::-webkit-scrollbar {
+	background-color: transparent;
+	height: 8px;
+	width: 8px;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.125);
+	border-radius: 4px;
+}
+
+[single-line] {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+[scroll-container] {
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: auto;
+	width: 100%;
+}
+
+* {
+	border: none;
+	font-size: 24px;
+	margin: 0px;
+	line-height: 1.25;
+	outline: none;
+	padding: 0px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: rgb(122, 182, 199);
+	color: rgb(0, 0, 0);
+	font-family: "Nunito", sans-serif;
+	user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+}
+
+input {
+	background-color: rgb(255, 255, 255);
+	border-radius: 999px;
+	box-sizing: border-box;
+	color: rgb(31, 31, 31);
+	font-size: 16px;
+	padding: 8px 16px;
+	width: 100%;
+}
+
+.app {
+	display: grid;
+	gap: 0px;
+	grid-template-rows: 1fr auto;
+	height: 100%;
+}
+
+.app__scroll {
+
+}
+
+.app__content {
+	box-sizing: border-box;
+	display: grid;
+	gap: 64px;
+	grid-auto-rows: min-content;
+	margin: 0px auto;
+	max-width: 960px;
+	padding: 32px;
+}
+
+.header {
+	display: grid;
+	gap: 16px;
+	justify-content: center;
+}
+
+.header__image {
+	max-width: 320px;
+	width: 100%;
+}
+
+.text {
+	display: grid;
+	gap: 16px;
+}
+
+.text__title {
+	color: rgb(255, 255, 255);
+	font-size: 24px;
+}
+
+.text__subtitle {
+	color: rgb(31, 31, 31);
+	font-size: 20px;
+}
+
+.auth {
+	display: grid;
+	gap: 16px;
+}
+
+.auth__input {
+
+}
+
+.auth__key {
+	color: rgb(31, 31, 31);
+	font-size: 20px;
+}
+
+.playlist {
+	display: grid;
+	gap: 16px;
+}
+
+.track {
+	cursor: pointer;
+	display: grid;
+	gap: 8px;
+}
+
+.track__title {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+
+.track__artist {
+	color: rgb(31, 31, 31);
+	font-size: 16px;
+}
+
+.app__player {
+
+}
+
+.player {
+	background-color: rgb(31, 31, 31);
+	cursor: pointer;
+	display: grid;
+	gap: 8px;
+}
+
+.player__audio {
+	display: none;
+}
+
+.player__content {
+	box-sizing: border-box;
+	display: grid;
+	gap: 8px;
+	margin: 0px auto;
+	max-width: 960px;
+	padding: 16px;
+	width: 100%;
+}
+
+.player__title {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+}
+
+.player__artist {
+	color: rgb(191, 191, 191);
+	font-size: 16px;
+}

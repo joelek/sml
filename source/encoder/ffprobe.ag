@@ -1,0 +1,13 @@
+{
+	FormatResult: {
+		format: {
+			duration: string,
+			tags: {
+				title: string,
+				artist: string,
+				replaygain_track_gain?: string,
+				replaygain_track_peak?: string
+			}
+		}
+	}
+}
